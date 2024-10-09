@@ -2,47 +2,118 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-wodth, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Julia - Design & Diagramação</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div role="banner">
-        <div class="barradenavegar" role="navigation">
-            <!--logo--> <img style="height:40px;width:40px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" src="file:///Users/thiagoleal/Documents/GitHub/thiagoleal.github.io/LogoExemplo.png" alt="Logo da Plataforma">
-            <label for="pesquisa">Pesquisar na plataforma</label>
-            <input type="search" name="pesquisa" id="pesquisa">
-            <ul>
-                <li><img style="height:40px;width:40px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" src="file:///Users/thiagoleal/Documents/GitHub/thiagoleal.github.io/LogoExemplo.png" alt="Logo da Home"></li>
-                <li><img style="height:40px;width:40px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" src="file:///Users/thiagoleal/Documents/GitHub/thiagoleal.github.io/curiosity-65.png" alt="Logo dos Interesses"></li>
-                <li><img style="height:40px;width:40px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" src="file:///Users/thiagoleal/Documents/GitHub/thiagoleal.github.io/grupo.png" alt="Logo da Comunidade"></li>
+    <header>
+        <div class="logo">
+            <img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/Anna Julia Foto.jpg" alt="Foto de Anna Julia" class="profile-pic">
+            <h1>Anna Julia</h1>
+            <p>Design & Diagramação</p>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!-- Menu fixo à direita -->
+<div class="fixed-menu">
+    <ul>
+        <li class="menu__item com-submenu">
+            <div class="titulo_menu_fixo"> Saiba Mais</div>
+            <ul class="submenu">
+                <li class="submenu__item">
+                    <a href="servicos.html">Serviços</a>
+                </li>
+                <li class="submenu__item">
+                    <a href="contato.html">Contato</a>
+                </li>
             </ul>
+    </ul>
+</div>
+
+    <!-- Seção com a foto de Anna Julia -->
+    <section class="hero">
+        <div class="container">
+            <div class="profile">
+                <h2>Transformando ideias em design visual</h2>
+                <p>Especialista em criar layouts que destacam o conteúdo e elevam a comunicação visual.</p>
+            </div>
         </div>
-        <div role="feed">
-            <h3>Atualizações do Feed</h3>
-            <div class data-pagelet="FeedUnit_0">
-                <!--Foto do grupo que realizou o post--><img style="height:40px;width:40px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" src="https://blog.betrybe.com/wp-content/uploads/2021/01/image-2.png" alt="Foto do grupo que realizou o post">
-                <div>
-                    <h5>Trilha na cachoeira da adutora</h5>
-                    Intensidade: moderada
+    </section>
+
+    <!-- Seção com imagens e links para os serviços -->
+    <section class="services-links">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-gallery">
+                <a href="servicos.html">
+                    <img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/livro.png" alt="Serviço 1">
+                    <p>Diagramação de Livros</p>
+                </a>
+                <a href="servicos.html">
+                    <img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/ebook.png" alt="Serviço 2">
+                    <p>Design de E-books</p>
+                </a>
+                <a href="servicos.html">
+                    <img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/report.png" alt="Serviço 3">
+                    <p>Relatórios Empresariais</p>
+                </a>
+                <a href="servicos.html">
+                    <img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/grafico personalizado.png" alt="Serviço 4">
+                    <p>Materiais Gráficos</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel com logos dos clientes
+    <section class="clients-carousel">
+        <div class="container">
+            <h2>Clientes</h2>
+            <div class="carousel">
+                <a href="portfolio.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Anna Julia Foto.jpg" alt="Cliente 1"></a>
+                <a href="portfolio.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Anna Julia Foto.jpg" alt="Cliente 2"></a>
+                <a href="portfolio.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Anna Julia Foto.jpg" alt="Cliente 3"></a>
+                <a href="portfolio.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Anna Julia Foto.jpg" alt="Cliente 4"></a>
+                <a href="portfolio.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Anna Julia Foto.jpg" alt="Cliente 5"></a>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="clients-carousel">
+        <div class="container">
+            <h2>Clientes</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo1.png" alt="Logo 1"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo2.png" alt="Logo 2"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo3.png" alt="Logo 3"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo4.png" alt="Logo 4"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo5.png" alt="Logo 5"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo6.png" alt="Logo 6"></a>
+                <!-- Duplicação das imagens para continuidade -->
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo1.png" alt="Logo 1"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo2.png" alt="Logo 2"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo3.png" alt="Logo 3"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo4.png" alt="Logo 4"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo5.png" alt="Logo 5"></a>
+                <a href="servicos.html"><img src="file:///Users/thiagoleal/Documents/GitHub/coderhouse/Projeto FinaL/Imagens/logo6.png" alt="Logo 6"></a>
                 </div>
-                <div>
-                    Mariana Carreta . 
-                    59 min
-            </div>
-                <h3></h3>
-            </div>
-            <div class data-pagelet="FeedUnit_1">
-            </div>
-            <div class data-pagelet="FeedUnit_{n}">
-            </div>
-            <div class data-pagelet="FeedUnit_{n}">
-            </div>
-            <div class data-pagelet="FeedUnit_{n}">
-            </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anna Julia - Todos os direitos reservados</p>
+    </footer>
+
 </body>
 </html>
